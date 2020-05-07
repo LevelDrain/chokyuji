@@ -1,0 +1,134 @@
+.title01 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: normal;
+  .title {
+    margin-bottom: 3px;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    font-weight: normal;
+  }
+  .subTitle {
+    font-size: 1.2rem;
+    letter-spacing: 1.2px;
+
+  }
+  &.mod02 {
+    margin-bottom: 19px;
+  }
+}
+
+.title02 {
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  text-align: center;
+  letter-spacing: 2.4px;
+  font-weight: normal;
+}
+
+.title03 {
+  margin-bottom: 45px;
+  position: relative;
+  padding-left: 12px;
+  font-size: 2.0rem;
+  font-weight: normal;
+  letter-spacing: 2px;
+  border-left: 8px solid $co01;
+  &::after {
+    position: absolute;
+    bottom: -15px;
+    left: -8px;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: $coLine;
+  }
+  &.mod01 {
+    margin-bottom: 10px;
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.title04 {
+  margin-bottom: 50px;
+  text-align: center;
+  span {
+    display: inline-block;
+    padding-bottom: 18px;
+    font-weight: normal;
+    font-size: 2.4rem;
+    border-bottom: 1px solid $coLine;
+    letter-spacing: 2px;
+  }
+}
+
+.title05 {
+  margin-bottom: 60px;
+  font-size: 2.2rem;
+  letter-spacing: 2.8px;
+  line-height: 48px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.title06 {
+  margin-bottom: 20px;
+  font-size: 2.8rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.title07 {
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+}
+
+.title08 {
+  margin-bottom: 5px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.title09 {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  border-left: 7px solid #b5c1de;
+  font-size: 2.0rem;
+  font-weight: normal;
+  text-align: left;
+}
+
+.title10 {
+  margin-bottom: 30px;
+  display: inline-block;
+  padding: 0 15px 15px 15px;
+  border-bottom: 1px solid $coLine;
+  font-size: 2.0rem;
+  font-weight: normal;
+}
+
+@media screen and (max-width:767px) {
+
+}
+@media all and (min-width: 768px) {
+  .title01 {
+    margin-bottom: 30px;
+    margin-bottom: 60px;
+    .title {
+      font-size: 3.0rem;
+    }
+  }
+
+  .title02 {
+    margin-bottom: 40px;
+    font-size: 2.8rem;
+  }
+  .title05 {
+    font-size: 2.8rem;
+  }
+}

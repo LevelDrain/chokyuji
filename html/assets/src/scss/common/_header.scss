@@ -1,0 +1,220 @@
+//https://choukyuuji.or.jp/
+
+.grid-parent {
+    display: grid;
+}
+
+@media screen and (max-width: 767px) {
+    #header {
+        position: fixed;
+        width: 100%;
+        height: 65px;
+        background-color: #fff;
+        border-top: 5px solid #337883;
+        border-bottom: 1px solid #999;
+        padding-top: 8px;
+        z-index: 100;
+    }
+
+    .grid-parent {
+        grid-template-rows: 1fr 0px;
+    }
+
+    .title-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: auto;
+            height: 44px;
+        }
+    }
+
+    .title-phone {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .menu-item {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #fff;
+        width: 100%;
+        border-top: 1px solid #999;
+        transition: $ts01;
+        opacity: 0;
+        visibility: hidden;
+
+        .menu-list {
+            position: relative;
+            border-bottom: 1px solid #999;
+            line-height: 0;
+
+            a {
+                display: flex;
+                padding: 30px 0;
+                justify-content: center;
+                align-items: center;
+                font-size: 16px;
+                color: #000;
+                width: 100%;
+
+                &::after {
+                    font-family: "fontawesome";
+                    content: "\f105";
+                    position: absolute;
+                    right: 0;
+                    padding-right: 25px;
+                }
+            }
+        }
+
+    }
+
+    //hamburger menu
+    .spMenuBtn {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+
+        .smenu-line {
+            position: absolute;
+            left: 10px;
+            width: 20px;
+            height: 2px;
+            background-color: #337883;
+            transition: $ts01;
+        }
+
+        .line1 {
+            top: 10px;
+        }
+
+        .line2 {
+            top: 18px;
+        }
+
+        .line3 {
+            top: 26px;
+        }
+    }
+
+    //hamburger toggle
+    .clicked {
+        opacity: 1;
+        visibility: visible;
+
+        .line1 {
+            transform: rotate(45deg);
+            top: 20px;
+        }
+
+        .line2 {
+            width: 0px;
+        }
+
+        .line3 {
+            transform: rotate(-45deg);
+            top: 20px;
+        }
+    }
+}
+
+@media all and (min-width: 768px) {
+    #header {
+        position: fixed;
+        width: 100%;
+        background: linear-gradient(to top, #fff 35%, #e6e6e6);
+        border-top: 5px solid #337883;
+        box-shadow: 0 0 20px rgba($color: #000000, $alpha: .16);
+        padding-top: 30px;
+        transition: $ts01;
+        z-index: 100;
+
+    }
+
+    .hide {
+        transform: translateY(-100%);
+    }
+
+    .grid-parent {
+        grid-template-rows: 1fr 60px;
+
+        .title-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 35px;
+
+            .title-phone {
+                display: flex;
+                align-items: center;
+
+                p {
+                    color: #337883;
+                    font-size: 32px;
+                    font-family: 'Noto Serif JP', serif;
+                    line-height: 36px;
+                }
+
+                i {
+                    padding-right: 5px;
+                    color: #337883;
+                    font-size: 32px;
+                }
+            }
+        }
+
+        .menu-bar {
+            .menu-item {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                height: 100%;
+
+                .menu-list {
+                    position: relative;
+
+                    .under {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 100%;
+                        font-size: 16px;
+
+                        &::after {
+                            position: absolute;
+                            margin: auto;
+                            width: 80%;
+                            height: 2px;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            content: '';
+                            background: #337883;
+                            transform: scale(0, 1);
+                            transform-origin: center top;
+                            transition: transform .3s;
+                        }
+
+                        &:hover::after {
+                            transform: scale(1, 1);
+                        }
+                    }
+
+                    a:hover {
+                        -webkit-filter: none;
+                        filter: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .spMenuBtn {
+        display: none;
+    }
+}

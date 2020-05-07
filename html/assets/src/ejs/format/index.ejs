@@ -1,0 +1,45 @@
+<%
+// 個別ディスクリプション設定
+page_dsc = 'フォーマットディスクリプション';
+// 個別キーワード設定
+page_kwd = 'フォーマットキーワード';
+// ページ名（トップページは空のまま）
+page_name = 'Format';
+// スラッグ名（トップページは空のまま）
+page_slug = 'format';
+// ３階層の場合入力
+parent_name = '';
+parent_slug = '';
+// ４階層の場合入力
+grand_name = '';
+grand_slug = '';
+// 追加CSS
+add_css = '';
+%>
+<% include ../_header %>
+
+<article>
+  <section class="pdLR">
+    <div class="title01">
+      <h2 class="title">COMPANY</h2>
+      <p class="subTitle">企業情報</p>
+    </div>
+    <% if(page_name){ %>
+    <% include ../_breadcrumb %>
+    <% } %>
+  </section>
+
+  <section class="secbox04 inner">
+    <div class="inner02 secbox04">
+      <h2 class="title03">お問い合わせいただき、誠にありがとうございました。</h2>
+      <p class="textStyle02 tsMod01">お問い合わせ内容を確認させていただき、<br class="pc"><strong>3営業日以内</strong>に、担当者よりご連絡いたしますので<br class="pc">今しばらくお待ちくださいませ。</p>
+      <p class="kome indent01 textStyle01">年末年始などの長期休業期間中のお問い合わせには、休業期間明けからの順次対応させていただきます。多数お問い合わせをいただいた場合には、ご返信が遅れることもありますので、あらかじめご了承ください。</p>
+    </div>
+    <p class="x2"><a href="/" class="btn02">トップページ</a></p>
+  </section>
+
+</article>
+
+<%# JS追加 %>
+<% add_js = ''; %>
+<% include ../_footer %>

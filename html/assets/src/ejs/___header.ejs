@@ -1,0 +1,38 @@
+<?php
+<% if(page_dsc){ %>
+    $page_dsc = '<%= page_dsc %>';
+<% } %>
+<% if(page_kwd){ %>
+    $page_kwd = '<%= page_kwd %>';
+<% } %>
+<% if(page_name){ %>
+$page_name = '<%= page_name %>';
+$page_slug = '<%= page_slug %>';
+<% } %>
+<% if(parent_name){ %>
+    $parent_name = '<%= parent_name %>';
+    $parent_slug = '<%= parent_slug %>';
+<% } %>
+<% if(grand_name){ %>
+    $grand_name = '<%= grand_name %>';
+    $grand_slug = '<%= grand_slug %>';
+<% } %>
+$add_css = '<%- add_css %>';
+?>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<?php require( $_SERVER['DOCUMENT_ROOT'] . '/assets/inc/head.php' ); ?>
+</head>
+<% if(!page_slug){
+  var body_class = 'chatBotBtnShow';
+} %>
+<% if(page_slug == 'contact'){
+  var body_class = 'chatBotBtnShow';
+} %>
+<% if(parent_slug == 'contact'){
+  var body_class = 'chatBotBtnShow';
+} %>
+<body class="<%= body_class %>">
+	<?php require( $_SERVER['DOCUMENT_ROOT'] . '/assets/inc/header.php' ); ?>
+	<main id="main">

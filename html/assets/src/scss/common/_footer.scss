@@ -1,0 +1,176 @@
+#footer {
+    border-top: 1px solid #999;
+}
+
+.footer-btm {
+    background-color: #337883;
+    text-align: center;
+    color: #fff;
+    padding: 8px 0;
+}
+
+@media screen and (max-width: 767px) {
+    .footer-parent {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 10px;
+
+        .fotter-child01 {
+            display: block;
+            border-bottom: 1px solid #999;
+            padding: 20px 0;
+
+            .footer_img_ttl {
+                padding-bottom: 10px;
+            }
+
+            .fotter-add-box {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding-top: 10px;
+
+                .fotter-add-ttl {
+                    background-color: #4d4d4d;
+                    display: block;
+                    text-align: center;
+                    color: #fff;
+                    width: 100px;
+                    padding: 4px;
+                    margin-right: 10px;
+                }
+
+                .fotter-add-sub {
+                    padding: 4px 0;
+                }
+            }
+        }
+
+        .fotter-child02 {
+            display: block;
+            padding-top: 20px;
+
+            .footer-txt-box {
+                .footer-txt-ttl {
+                    font-size: 18px;
+                    color: #337883;
+                    margin-bottom: 15px;
+
+                    .footer-icon {
+                        margin-right: 20px;
+                    }
+                }
+
+                .footer-txt-sub {
+                    margin-bottom: 50px;
+                }
+            }
+
+            .footer-map-box {
+                display: block;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 768px) {
+    .footer-parent {
+        display: flex;
+        justify-content: center;
+        padding: 45px;
+
+        .fotter-child01 {
+            border-right: 1px solid #999;
+            width: 400px;
+
+            .footer_img_ttl {
+                padding-bottom: 10px;
+            }
+
+            .fotter-add-box {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding-top: 10px;
+
+                .fotter-add-ttl {
+                    background-color: #4d4d4d;
+                    display: block;
+                    text-align: center;
+                    color: #fff;
+                    width: 100px;
+                    padding: 4px;
+                    margin-right: 10px;
+                }
+
+                .fotter-add-sub {
+                    padding: 4px 0;
+                }
+            }
+        }
+
+        .fotter-child02 {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-left: 20px;
+            width: 675px;
+
+            .footer-txt-box {
+                display: block;
+
+                .footer-txt-ttl {
+                    font-size: 18px;
+                    color: #337883;
+                    margin-bottom: 15px;
+
+                    .footer-icon {
+                        margin-right: 20px;
+                    }
+                }
+
+                .footer-txt-sub {
+                    margin-bottom: 50px;
+                }
+            }
+
+            .footer-map-box {
+                display: block;
+            }
+        }
+    }
+
+    #Pagetop {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        right: 0;
+        bottom: 0;
+        margin: 0 2em 2em 0;
+        background: #545454;
+        opacity: .6;
+        z-index: 20;
+
+        a {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            width: 50px;
+            height: 50px;
+
+            &::before {
+                font-family: "fontawesome";
+                font-weight: 900;
+                content: "\f0d8";
+                font-size: 25px;
+                color: #fff;
+            }
+        }
+    }
+}

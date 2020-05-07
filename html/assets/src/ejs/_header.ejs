@@ -1,0 +1,116 @@
+<% 
+site_url = 'http://www.adjuvant.co.jp';
+site_tit = 'アジュバンコスメジャパン';
+if(!page_name){ page_tit = '';
+//ディスクリプション設定
+page_dsc = '';
+}else{ page_tit = page_name + ' | ' + site_tit; // ディスクリプション設定
+page_dsc = '自然派ヘアケア・スキンケア化粧品メーカーのアジュバンコスメジャパンの' + page_name + 'のページです。'; }
+// if(!page_dsc){ // } // キーワード設定
+if(!page_kwd){ page_kwd = ''; }
+version = '20200116'; 
+%>
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="" />
+  <meta name="description" content="<%= page_dsc %>" />
+  <meta name="keywords" content="<%= page_kwd %>" />
+  <meta name="format-detection" content="telephone=no,address=no,email=no" />
+  <meta name="robots" content="index,follow,noodp" />
+  <meta name="copyright" content="© 2011 ADJUVANT COSME JAPAN CO.,LTD." />
+  <script type="text/javascript">
+    if (
+      navigator.userAgent.indexOf("iPhone") > 0 ||
+      navigator.userAgent.indexOf("iPod") > 0 ||
+      navigator.userAgent.indexOf("Android") > 0
+    ) {
+      document.write(
+        '<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">'
+      );
+    } else {
+      document.write(
+        '<meta name="viewport" content="width=1100px,user-scalable=no">'
+      );
+    }
+  </script>
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="" />
+  <meta name="twitter:card" content="" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:creator" content="" />
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:url" content="" />
+  <title><%= page_tit %></title>
+  <link rel="stylesheet" href="/assets/css/common/common.css?v=<%= version %>" />
+  <% if(!page_name){ %>
+  <link rel="stylesheet" href="/assets/css/top/top.css?v=<%= version %>" />
+  <% }else{ %>
+  <link rel="stylesheet" href="/assets/css/component/component.css?v=<%= version %>" />
+  <% } %> <% if(add_css){ %> <%- add_css %> <% } %>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "");
+  </script>
+</head>
+
+<body>
+  <header id="header">
+    <div class="inner">
+      <div class="grid-parent">
+        <div class="title-bar">
+          <a href="/">
+            <img src="/assets/img/common/logo.svg" alt="">
+          </a>
+          <div class="title-phone">
+            <i class="fa fa-phone-square"></i>
+            <p>0263-26-2568</p>
+          </div>
+
+          <div class="spMenuBtn">
+            <span class="smenu-line line1"></span>
+            <span class="smenu-line line2"></span>
+            <span class="smenu-line line3"></span>
+          </div>
+        </div>
+
+        <div class="menu-bar">
+          <ul class="menu-item">
+            <li class="menu-list">
+              <a href="" class="under">住職メッセージ</a>
+            </li>
+            <li class="menu-list">
+              <a href="" class="under">長久寺について</a>
+            </li>
+            <li class="menu-list">
+              <a href="" class="under">かわら版・催事情報</a>
+            </li>
+            <li class="menu-list">
+              <a href="" class="under">坐禅体験</a>
+            </li>
+            <li class="menu-list">
+              <a href="" class="under">年中行事・アクセス</a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </header>
+
+  <main id="Main">

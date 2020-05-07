@@ -1,0 +1,150 @@
+<%
+// 個別ディスクリプション設定
+var page_dsc = '';
+// 個別キーワード設定
+var page_kwd = '';
+// ページ名（トップページは空のまま）
+var page_name = '';
+// スラッグ名（トップページは空のまま）
+var page_slug = '';
+// ３階層の場合入力
+var parent_name = '';
+var parent_slug = '';
+// ４階層の場合入力
+var grand_name = '';
+var grand_slug = '';
+// 追加CSS
+var add_css = '';
+%>
+<% include _header %>
+
+<% if(page_name){ %>
+<% include _breadcrumb %>
+<% } %>
+
+<article>
+  <section class="main-sec">
+    <ul class="calSlider">
+      <li><img src="/assets/img/common/slide01.jpg" alt=""></li>
+      <li><img src="/assets/img/common/slide02.jpg" alt=""></li>
+      <li><img src="/assets/img/common/slide03.jpg" alt=""></li>
+      <li><img src="/assets/img/common/slide04.jpg" alt=""></li>
+      <li><img src="/assets/img/common/slide05.jpg" alt=""></li>
+    </ul>
+  </section>
+
+  <div class="main-contents">
+    <div class="contents-wrap">
+      <section class="common-sec scroll-sec-animation">
+        <div class="message-part">
+          <h2 class="sec-title02">守り継がれる<span class="sp-show"><br></span>大切な人の幸せを願う心</h2>
+          <p class="sec-text">
+            長久寺は松本市南西部の神林にある曹洞宗の禅寺です。<br class="sp-delete">
+            四百年にわたりお釈迦様からの正伝の仏法を依りどころとして、<br class="sp-delete">
+            法灯の明かりを守り継いでいます。<br class="sp-delete">
+            長久寺は扉を大きく開き、皆さんのお越しをお待ちしています。
+          </p>
+          <div class="link-btn">
+            <p>
+              <a href="/" class="button01">住職メッセージ</a>
+            </p>
+            <p>
+              <a href="/" class="button01">紹介ビデオを見る</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="common-sec">
+        <div class="event-flex-ajst">
+          <h2 class="kawara-ttl">長久寺 かわら版</h2>
+
+          <section class="sub-sec scroll-sec-animation">
+            <h3 class="sec-title03">行事のお知らせ</h3>
+            <a href="" class="event-news">
+              <img src="/assets/img/common/ensemble-pdf-177x251.jpg" alt="">
+              <dl>
+                <dt>2019年09月30日</dt>
+                <dd class="event-ttl">アンサンブル　弦楽器の響き</dd>
+                <dd class="event-txt">[PDF] 573 KB</dd>
+              </dl>
+            </a>
+          </section>
+        </div>
+
+        <section class="sub-sec scroll-sec-animation">
+          <h3 class="sec-title03">新着情報</h3>
+          <div class="link-lst">
+            <ul>
+              <li>
+                <a href="/">
+                  <dl class="link-lst-p eventbox-hov">
+                    <dt class="link-lst-ttl">2019年09月03日</dt>
+                    <dd class="link-lst-data">長久寺仏教婦人会</dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <dl class="link-lst-p eventbox-hov">
+                    <dt class="link-lst-ttl">2019年09月03日</dt>
+                    <dd class="link-lst-data">アンサンブル　弦楽器の響き</dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <dl class="link-lst-p eventbox-hov">
+                    <dt class="link-lst-ttl">2019年06月24日</dt>
+                    <dd class="link-lst-data">飛騨三十三観音霊場めぐり</dd>
+                  </dl>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <div class="btn-box">
+          <div class="link-btn button02-del-style">
+            <a href="/" class="button01 button-ajst">長久寺 かわら版 一覧</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <nav class="side-menu">
+      <ul class="side-content">
+        <li>
+          <a href="/">
+            アクセス<img src="/assets/img/common/side01.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            坐禅体験<img src="/assets/img/common/side02.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            ご相談窓口<img src="/assets/img/common/side03.jpg" alt="">
+          </a>
+        </li>
+      </ul>
+      <ul class="event-content">
+        <li>
+          <a href="/"><img src="/assets/img/common/asachakai.png" alt=""></a>
+        </li>
+        <li>
+          <a href="/"><img src="/assets/img/common/goeika.png" alt=""></a>
+        </li>
+        <li>
+          <a href="/"><img src="/assets/img/common/fujinkai.png" alt=""></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</article>
+
+<%# JS追加 %>
+<% var add_js = '<script src="/assets/js/page/top.js"></script>'; %>
+<% include _footer %>

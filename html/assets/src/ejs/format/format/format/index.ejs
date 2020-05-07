@@ -1,0 +1,34 @@
+<%
+// 個別ディスクリプション設定
+page_dsc = 'フォーマットディスクリプション';
+// 個別キーワード設定
+page_kwd = 'フォーマットキーワード';
+// ページ名（トップページは空のまま）
+page_name = 'フォーマット';
+// スラッグ名（トップページは空のまま）
+page_slug = 'format';
+// ３階層の場合入力
+parent_name = 'フォーマット';
+parent_slug = 'format';
+// ４階層の場合入力
+grand_name = 'フォーマット';
+grand_slug = 'format';
+// 追加CSS
+add_css = '';
+%>
+<% include ..\/..\/../_header %>
+
+<% if(page_name){ %>
+<% include ..\/..\/../_breadcrumb %>
+<% } %>
+
+<article>
+    <section>
+        <h2>フォーマット</h2>
+    </section>
+</article>
+
+<%# JS追加 %>
+<% add_js = ''; %>
+<% include ..\/..\/../_footer %>
+    

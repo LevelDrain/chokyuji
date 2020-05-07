@@ -1,0 +1,484 @@
+#main {
+  display: block;
+  padding-bottom: 80px;
+}
+@media all and (min-width:768px) {
+  #main {
+    padding-bottom: 120px;
+  }
+}
+
+.iconPdfBefore::before {
+  display: inline-block;
+  content: '\f1c1';
+  font-family: 'fontawesome';
+  margin-right: 5px;
+  font-size: 14px;
+  // color: #ff0000;
+  vertical-align: bottom;
+}
+
+.red {
+  color: #eb6161;
+}
+
+.ancStyle {
+  color: $co03;
+  text-decoration: underline;
+}
+@media all and (min-width:768px) {
+  .ancStyle {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.bgGr {
+  background-color: #ededed;
+}
+.bg01 {
+  background-color: #f8f8f8;
+}
+.bg02 {
+  background-color: #fff;
+}
+
+.hr01 {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  border: none;
+  border-bottom: 1px solid $coLine;
+}
+
+.pdLR {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.inner02 {
+  margin: 0 auto;
+  max-width: 666px;
+  width: 100%;
+}
+.inner03 {
+  @extend .pdLR;
+  margin: 0 auto;
+  max-width: 800 + 40px;
+  width: 100%;
+}
+
+.secbox01 {
+  margin-bottom: 40px;
+}
+@media all and (min-width:768px) {
+  .secbox01 {
+    margin-bottom: 80px;
+  }
+}
+.secbox02 {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+@media all and (min-width:768px) {
+  .secbox02 {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+}
+.secbox03 {
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+@media all and (min-width:768px) {
+  .secbox03 {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+}
+.secbox04 {
+  padding-bottom: 50px;
+}
+@media all and (min-width:768px) {
+  .secbox04 {
+    padding-bottom: 100px;
+  }
+}
+.secbox05 {
+  padding-bottom: 40px;
+}
+@media all and (min-width:768px) {
+  .secbox05 {
+    padding-bottom: 80px;
+  }
+}
+
+.secbox06 {
+  padding-bottom: 70px;
+}
+@media all and (min-width:768px) {
+  .secbox06 {
+    padding-bottom: 140px;
+  }
+}
+
+.secbox07 {
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+@media all and (min-width:768px) {
+  .secbox07 {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+}
+
+.secbox08 {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+@media all and (min-width:768px) {
+  .secbox08 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+.readText01 {
+  text-align: center;
+  font-weight: 500;
+  line-height: 2.14;
+  letter-spacing: 1.4px;
+}
+
+.readText02 {
+  line-height: 200%;
+  font-size: 2.6rem;
+  letter-spacing: 6px;
+}
+@media all and (min-width:768px) {
+  .readText02 {
+    font-size: 4.0rem;
+  }
+}
+
+
+.textStyle01 {
+  font-size: 1.4rem;
+  line-height: 160%;
+}
+
+.textStyle02 {
+  margin-bottom: 30px;
+  font-size: 1.6rem;
+  line-height: 160%;
+  &.tsMod01 {
+    line-height: 30px;
+  }
+  &.tsMod02 {
+    margin-bottom: 20px;
+  }
+  a {
+    color: #8aa3de;
+    text-decoration: underline;
+  }
+}
+@media all and (min-width:768px) {
+  .textStyle02 {
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.textStyle03 {
+  margin-bottom: 40px;
+  line-height: 30px;
+  font-size: 1.4rem;
+}
+
+.textStyle04 {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted $co01;
+  font-size: 1.6rem;
+}
+
+.styleBox01 {
+  padding: 40px 20px;
+}
+@media screen and (max-width:767px) {
+  .styleBox01 {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+@media all and (min-width:768px) {
+  .styleBox01 {
+    padding: 40px;
+  }
+}
+.styleBox02 {
+  padding: 20px;
+}
+
+.styleBox03 {
+  padding: 30px;
+  display: flex;
+    align-items: center;
+  max-width: 440px;
+  width: 100%;
+  border: 3px solid $co01;
+  border-radius: 10px;
+  &.sb03Mod01 {
+    background-color: #F0F2F8;
+  }
+}
+
+.label01 {
+  padding: 0 10px;
+  margin-bottom: 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  min-width: 90px;
+  height: 30px;
+  background-color: $co01;
+  color: #fff;
+  align-self: flex-start;
+}
+
+.gmap {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
+
+.slide01 {
+  .slick-dots {
+    padding-top: 15px;
+    position: static;
+    text-align: right;
+    li {
+      margin: 0;
+      width: 40px;
+      height: 10px;
+      & + li {
+        margin-left: 10px;
+      }
+      button {
+        background-color: #939393;
+        width: 40px;
+        height: 10px;
+        transition: $ts01;
+        &::before {
+          display: none;
+        }
+      }
+      &.slick-active {
+        button {
+          background-color: $co01;
+        }
+      }
+    }
+    
+  }
+}
+
+
+.modalStyle01 {
+  position: relative;
+  .modalClose {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    cursor: pointer;
+    .times {
+      display: block;
+      width: 30px;
+      height: 30px;
+      transform: rotate(45deg);
+      &::before {
+        position: absolute;
+        top: 14px;
+        content: '';
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: $cobk;
+      }
+      &::after {
+        position: absolute;
+        left: 14px;
+        content: '';
+        display: block;
+        width: 2px;
+        height: 30px;
+        background-color: $cobk;
+      }
+    }
+  }
+
+  .modalTop {
+    margin-bottom: 27px;
+    .modalLeft {
+      .modalPhoto {
+        margin-bottom: 10px;
+      }
+      .modalBrand {
+        margin-bottom: 5px;
+      }
+      .modalTitle {
+        margin-bottom: 5px;
+        font-size: 2.2rem;
+        font-weight: bold;
+      }
+      .modalTitleJp {
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      .modalText {
+        line-height: 160%;
+        .modalBunrui {
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .modalRight {
+      flex: 1;
+      dl {
+        dt {
+          margin-bottom: 15px;
+          padding-left: 10px;
+          border-left: 7px solid $co01;
+          font-size: 1.8rem;
+        }
+        dd {
+          margin-left: 0;
+          line-height: 24px;
+        }
+        &+dl {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+  .linkBtn01 {
+    .listItem {
+      margin-top: 0;
+    }
+  }
+
+  &.modalMod01 {
+    .modalContent {
+      padding-left: 20px;
+      padding-right: 20px;
+      max-width: 500px;
+      width: 100%;
+      margin: 0 auto;
+      .inputBox {
+        margin-bottom: 20px;
+        input {
+          width: 100%;
+          height: 50px;
+        }
+      }
+      .loginBtn {
+        padding-top: 10px;
+        margin-bottom: 20px;
+      }
+      .text {
+        margin-bottom: 40px;
+        line-height: 160%;
+        font-size: 1.6rem;
+        text-align: left;
+      }
+      .contactBtn {
+        font-size: 1.4rem;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:767px) {
+  .modalStyle01 {
+    .modalTop {
+      height: 200px;
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        display:none;
+      }
+      .modalLeft {
+        .modalPhoto {
+          text-align: center;
+        }
+      }
+      .modalRight {
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+@media all and (min-width:768px) {
+  .modalStyle01 {
+    .modalTop {
+      display: flex;
+      .modalLeft {
+        max-width: 332px;
+      }
+      .modalRight {
+        margin-left: 58px;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+          display:none;
+        }
+      }
+    }
+  }
+}
+
+
+/*---------------------------------------------
+form
+---------------------------------------------*/
+@import "_form";
+/*---------------------------------------------
+title
+---------------------------------------------*/
+@import "_title";
+/*---------------------------------------------
+table
+---------------------------------------------*/
+@import "_table";
+/*---------------------------------------------
+button
+---------------------------------------------*/
+@import "_button";
+/*---------------------------------------------
+list
+---------------------------------------------*/
+@import "_list";
+/*---------------------------------------------
+animate
+---------------------------------------------*/
+@import "_animate";
